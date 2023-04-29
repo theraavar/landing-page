@@ -1,0 +1,8 @@
+:root {
+    --color-background1: #1F2937;
+    --color-background2: #3882F6;
+    --color-button1: var(--color-background2);
+    --color-text1: #F9FAF8;
+    --color-text2: #E5E7EB;
+    --color-text3: var(--color-background1);
+}
