@@ -1,8 +1,34 @@
 :root {
     --color-background1: #1F2937;
     --color-background2: #3882F6;
+    --color-background3: var(--color-text1);
+    --color-background4: var(--color-text2);
     --color-button1: var(--color-background2);
     --color-text1: #F9FAF8;
     --color-text2: #E5E7EB;
     --color-text3: var(--color-background1);
+
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+header {
+    background: var(--color-background1);
+}
+main > .one {
+    background: var(--color-background3);
+}
+main > .two {
+    background: var(--color-background4);
+}
+main > .three {
+    background: var(--color-background3);
+}
+footer {
+    background: var(--color-background1);
 }
