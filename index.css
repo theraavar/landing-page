@@ -22,7 +22,7 @@ header {
     height: 25%;
 }
 main {
-    height: 65%;
+    height: 100%;
 }
 main > .one {
     background: var(--color-background3);
