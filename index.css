@@ -19,16 +19,24 @@ body{
 }
 header {
     background: var(--color-background1);
+    height: 25%;
+}
+main {
+    height: 65%;
 }
 main > .one {
     background: var(--color-background3);
+    height: 25%
 }
 main > .two {
     background: var(--color-background4);
+    height: 25%
 }
 main > .three {
     background: var(--color-background3);
+    height: 15%;
 }
 footer {
     background: var(--color-background1);
+    height: 10%;
 }
