@@ -43,7 +43,7 @@ header {
 }
 /* These are selectors for everything within the footer element. */
 footer {
-
+    background-color: var(--color-background1);
 }
 /* These are our generic HTML element selectors. */
 a {
