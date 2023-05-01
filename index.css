@@ -20,7 +20,7 @@ body{
     height: 100vh;
     width: 100vw;
 }
-header, main, footer {
+header, .one, .two, .three, footer {
     padding: 3% 10%;
 }
 header {
@@ -30,15 +30,15 @@ header {
 main {
     height: 100%;
 }
-main > .one {
+.one {
     background: var(--color-background3);
     height: 25%
 }
-main > .two {
+.two {
     background: var(--color-background4);
     height: 25%
 }
-main > .three {
+.three {
     background: var(--color-background3);
     height: 15%;
 }
