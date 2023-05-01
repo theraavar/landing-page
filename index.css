@@ -31,10 +31,15 @@ body{
 /* These are selectors for everything within the header element. */
 header {
     background-color: var(--color-background1);
+    flex-basis: 100%;
 }
 /* These are selectors for everything within the main element. */
+main {
+    
+}
 #content-one {
     background-color: var(--color-background3);
+    flex-basis: 100%;
 }
 #content-two {
     background-color: var(--color-background4);
@@ -48,9 +53,12 @@ footer {
 }
 /* These are our generic HTML element selectors. */
 a {
+    color: inherit;
+    font-family: inherit;
     text-decoration: none;
 }
 button {
+    background-color: var(--color-background2);
     border-radius: 0.5rem;
 }
 li {
