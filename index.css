@@ -35,8 +35,8 @@ body{
 }
 /* This is our selector for all of the top-level boxes. */
 header, #content-one, #content-two, #content-three, footer {
-    flex-basis: 100%;
     padding: 5% 10%;
+    width: 100%;
 }
 /* These are selectors for everything within the header element. */
 header {
@@ -46,8 +46,9 @@ header {
 header > * {
     color: var(--color-text1);
 }
-nav {
-    flex-direction: row;
+#header-logo {
+    position: absolute;
+    left: 0;
 }
 /* These are selectors for everything within the main element. */
 main {
