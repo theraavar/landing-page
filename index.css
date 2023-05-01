@@ -38,7 +38,7 @@ header {
 }
 /* These are selectors for everything within the main element. */
 main {
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 #content-one {
@@ -54,6 +54,7 @@ main {
 /* These are selectors for everything within the footer element. */
 footer {
     background-color: var(--color-background1);
+    min-height: 5rem;
 }
 /* These are our generic HTML element selectors. */
 a {
