@@ -4,6 +4,8 @@ This is a project for [The Odin Project](https://www.theodinproject.com/lessons/
 
 *Objective(s):*
 
-    - Using a provided image, to recreate the portrayed website.
+    - Using the provided image, recreate the web page.
 
-    - Test our skills using HTML and CSS.
+    - Gain practical experience with Flexbox.
+
+    - Improve our understanding of HTML and CSS.

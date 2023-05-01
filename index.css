@@ -20,33 +20,32 @@ body{
     height: 100vh;
     width: 100vw;
 }
-header, .one, .two, .three, footer {
-    padding: 3% 10%;
-}
-header {
-    background: var(--color-background1);
-    height: 25%;
-}
-main {
-    height: 100%;
-}
-.one {
-    background: var(--color-background3);
-    height: 25%
-}
-.two {
-    background: var(--color-background4);
-    height: 25%
-}
-.three {
-    background: var(--color-background3);
-    height: 15%;
-}
-footer {
-    background: var(--color-background1);
-    height: 10%;
-}
+/* These are our general Flexbox settings that we will override in more specific selectors as needed. */
+.flex-container {
 
+}
+.flex-box {
+    
+}
+/* These are selectors for everything within the header element. */
+header {
+
+}
+/* These are selectors for everything within the main element. */
+#content-one {
+
+}
+#content-two {
+
+}
+#content-three {
+
+}
+/* These are selectors for everything within the footer element. */
+footer {
+
+}
+/* These are our generic HTML element selectors. */
 a {
     text-decoration: none;
 }
