@@ -28,14 +28,18 @@ body{
 .flex-box {
     flex: 1;
 }
+/* This is our selector for all of the top-level boxes. */
+header, #content-one, #content-two, #content-three, footer {
+    flex-basis: 100%;
+}
 /* These are selectors for everything within the header element. */
 header {
     background-color: var(--color-background1);
-    flex-basis: 100%;
 }
 /* These are selectors for everything within the main element. */
 main {
-    
+    height: 100%;
+    width: 100%;
 }
 #content-one {
     background-color: var(--color-background3);
