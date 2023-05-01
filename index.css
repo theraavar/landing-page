@@ -22,10 +22,11 @@ body{
 }
 /* These are our general Flexbox settings that we will override in more specific selectors as needed. */
 .flex-container {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 .flex-box {
-
+    flex: 1;
 }
 /* These are selectors for everything within the header element. */
 header {
