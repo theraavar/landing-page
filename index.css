@@ -25,21 +25,21 @@ body{
 
 }
 .flex-box {
-    
+
 }
 /* These are selectors for everything within the header element. */
 header {
-
+    background-color: var(--color-background1);
 }
 /* These are selectors for everything within the main element. */
 #content-one {
-
+    background-color: var(--color-background3);
 }
 #content-two {
-
+    background-color: var(--color-background4);
 }
 #content-three {
-
+    background-color: var(--color-background3);
 }
 /* These are selectors for everything within the footer element. */
 footer {
