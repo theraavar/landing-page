@@ -46,6 +46,9 @@ header {
 header > * {
     color: var(--color-text1);
 }
+nav > div{
+    width: 100%;
+}
 #header-logo {
     position: absolute;
     left: 0;
@@ -79,6 +82,7 @@ a {
 button {
     background-color: var(--color-background2);
     border-radius: 0.5rem;
+    padding: 1rem 2rem;
 }
 li {
     display: inline;
@@ -86,4 +90,5 @@ li {
 ul {
     display: inline-block;
     list-style-type: none;
+    padding: 1rem 2rem;
 }
