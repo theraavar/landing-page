@@ -21,8 +21,7 @@ body{
     width: 100vw;
 }
 header, main, footer {
-    margin-left: 10%;
-    margin-right: 10%;
+    padding: 3% 10%;
 }
 header {
     background: var(--color-background1);
