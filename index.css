@@ -8,14 +8,21 @@
     --color-text2: #E5E7EB;
     --color-text3: var(--color-background1);
 
+    align-items: center;
     font-family: Roboto, sans-serif;
     font-size: 10px;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 body{
     height: 100vh;
     width: 100vw;
+}
+header, main, footer {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 header {
     background: var(--color-background1);
@@ -39,4 +46,15 @@ main > .three {
 footer {
     background: var(--color-background1);
     height: 10%;
+}
+
+a {
+    text-decoration: none;
+}
+button {
+    border-radius: 0.5rem;
+}
+ul {
+    display: inline-block;
+    list-style-type: none;
 }
