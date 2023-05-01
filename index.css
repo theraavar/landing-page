@@ -16,8 +16,13 @@
     padding: 0;
     text-align: center;
 }
+* {
+    border: 1px solid red;
+}
 body{
     height: 100vh;
+    padding: 0;
+    margin: 0;
     width: 100vw;
 }
 /* These are our general Flexbox settings that we will override in more specific selectors as needed. */
@@ -26,15 +31,19 @@ body{
     flex-wrap: wrap;
 }
 .flex-box {
-    flex: 1;
+    flex: 1 0 auto;
 }
 /* This is our selector for all of the top-level boxes. */
 header, #content-one, #content-two, #content-three, footer {
     flex-basis: 100%;
+    padding: 5% 10%;
 }
 /* These are selectors for everything within the header element. */
 header {
     background-color: var(--color-background1);
+}
+header > * {
+    color: var(--color-text1);
 }
 /* These are selectors for everything within the main element. */
 main {

@@ -10,7 +10,7 @@
         <title>Landing Page</title>    
 </head>
 <body>
-    <header>
+    <header class="flex-container">
         <nav>
             <h4>Header Logo</h4>
             <ul>
@@ -21,7 +21,7 @@
         </nav>
         <div>
             <div>
-                <h2>This website is awesome</h2>
+                <h1>This website is awesome</h1>
                 <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is a lower contrast.</p>
                 <button type="button">Sign up</button>
             </div>
@@ -30,10 +30,10 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="one">
-            <h5>Some random information.</h5>
-            <div>
+    <main class="flex-container">
+        <section class="flex-container flex-box" id="content-one">
+            <div class="flex-box">
+                <h2>Some random information.</h2>
                 <div>
                     <img src="">
                     <p>this is some subtext under an illustration or image</p>
@@ -52,14 +52,16 @@
                 </div>
             </div>
         </section>
-        <section class="two">
-            <p>This is an inspiring quote, or a testimonal from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-            <p>- Thor, God of Thunder</p>
+        <section class="flex-container flex-box" id="content-two">
+            <div class="flex-box">
+                <p>This is an inspiring quote, or a testimonal from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
+                <p>- Thor, God of Thunder</p>
+            </div>
         </section>
-        <section class="three">
-            <div>
+        <section class="flex-container flex-box" id="content-three">
+            <div class="flex-box">
                 <div>
-                    <h6>Call to action! It's time!</h6>
+                    <h3>Call to action! It's time!</h3>
                     <p>Sign up for our product by clicking that button right over there!</p>
                 </div>
                 <div>
@@ -68,7 +70,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="flex-container">
         <p>Copyright © theraavar 2023</p>
     </footer>
 </body>
