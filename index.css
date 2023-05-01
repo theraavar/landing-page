@@ -46,6 +46,9 @@ header {
 header > * {
     color: var(--color-text1);
 }
+nav {
+    flex-direction: row;
+}
 /* These are selectors for everything within the main element. */
 main {
     height: 80%;
