@@ -41,6 +41,7 @@ header, #content-one, #content-two, #content-three, footer {
 /* These are selectors for everything within the header element. */
 header {
     background-color: var(--color-background1);
+    flex-direction: column;
 }
 header > * {
     color: var(--color-text1);
