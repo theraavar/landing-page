@@ -17,13 +17,13 @@
     text-align: center;
 }
 * {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 body{
-    height: 100vh;
+    height: auto;
     padding: 0;
     margin: 0;
-    width: 100vw;
+    width: 40vw;
 }
 /* These are our general Flexbox settings that we will override in more specific selectors as needed. */
 .flex-container {
@@ -31,11 +31,13 @@ body{
     flex-wrap: wrap;
 }
 .flex-box {
+    /* display: flex; */
     flex: 1 0 auto;
+    /* flex-wrap: nowrap; */
 }
 /* This is our selector for all of the top-level boxes. */
 header, #content-one, #content-two, #content-three, footer {
-    padding: 5% 10%;
+    padding: 3% 15%;
     width: 100%;
 }
 /* These are selectors for everything within the header element. */
@@ -47,7 +49,14 @@ header > * {
     color: var(--color-text1);
     padding-top: 2rem;
 }
-
+.header__wrapper > img {
+    background-color: var(--color-background4);
+    height: 80%;
+    width: 80%;
+}
+nav > div > h1 {
+    position: relative;
+}
 /* These are selectors for everything within the main element. */
 main {
     height: 80%;
@@ -56,6 +65,10 @@ main {
 #content-one {
     background-color: var(--color-background3);
     flex-basis: 100%;
+}
+#content-one > div > div{
+    display: flex;
+    flex-wrap: wrap;
 }
 #content-one > div > div > img {
     border: 1px solid var(--color-background2);
@@ -70,7 +83,7 @@ main {
 /* These are selectors for everything within the footer element. */
 footer {
     background-color: var(--color-background1);
-    min-height: 5rem;
+    min-height: 5%;
 }
 footer > * {
     color: var(--color-text1);
