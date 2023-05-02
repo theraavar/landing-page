@@ -17,7 +17,7 @@
     text-align: center;
 }
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 body{
     height: 100vh;
@@ -45,14 +45,9 @@ header {
 }
 header > * {
     color: var(--color-text1);
+    padding-top: 2rem;
 }
-nav > div{
-    width: 100%;
-}
-#header-logo {
-    position: absolute;
-    left: 0;
-}
+
 /* These are selectors for everything within the main element. */
 main {
     height: 80%;
@@ -61,6 +56,10 @@ main {
 #content-one {
     background-color: var(--color-background3);
     flex-basis: 100%;
+}
+#content-one > div > div > img {
+    border: 1px solid var(--color-background2);
+    border-radius: 0.5rem;
 }
 #content-two {
     background-color: var(--color-background4);
@@ -72,6 +71,9 @@ main {
 footer {
     background-color: var(--color-background1);
     min-height: 5rem;
+}
+footer > * {
+    color: var(--color-text1);
 }
 /* These are our generic HTML element selectors. */
 a {
