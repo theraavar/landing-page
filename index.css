@@ -13,9 +13,10 @@
 *,
 *::before,
 *::after {
-    border: 1px solid red;
     align-items: center;
+    border: 1px solid red;
     box-sizing: border-box;
+    color: var(--color-text3);
     font-family: Roboto, sans-serif;
     font-size: 10px;
     justify-content: center;
@@ -55,6 +56,7 @@ header {
     }
         /* {nav} -> {p} */
         nav > p {
+            color: var(--color-text1);
             font-size: 2.4rem;
             text-align: left;
         }
@@ -81,6 +83,7 @@ header {
         }
             /* {div} -> {p:first-of-type} */
             header > div > div > p:first-of-type {
+                color: var(--color-text1);
                 font-size: 4.8rem;
             }
             /* {div} -> {p:last-of-type} */
@@ -113,6 +116,21 @@ main {
     .one {
         background-color: var(--color-background3);
     }
+        /* {section.one} -> {div} -> {p} */
+        .one > div > p {
+            font-size: 3.6rem;
+            font-weight: bold;
+        }
+        .card > img {
+            border: 1px solid var(--color-background2);
+            border-radius: 0.5rem;
+            height: max-content;
+            width: 90%;
+        }
+        /* {section.one} -> {div} -> {div} -> {div.card} */
+        .card > p {
+            font-size: 1.8rem;
+        }
     /* {main} -> {section.two} */
     .two {
         background-color: var(--color-background4);
