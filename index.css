@@ -29,9 +29,11 @@
 .flex-parent {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .flex-child {
-    flex: 1 0 min-content;
+    flex: 1;
+    padding: 1%;
 }
 /* ---------- */
 /* These are our elements, organized by their parents. */
@@ -43,6 +45,7 @@ header, .one, .two, .three {
 header {
     background-color: var(--color-background1);
     color: var(--color-text1);
+    padding-top: 0;
 
     flex-direction: column;
 }
