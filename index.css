@@ -8,22 +8,34 @@
     --color-text1: #F9FAF8;
     --color-text2: #E5E7EB;
     --color-text3: var(--color-background1);
-
-    align-items: center;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
-    font-size: 10px;
-    justify-content: center;
-    text-align: center;
 }
 /* This is our everything selector. */
 *,
 *::before,
 *::after {
-    /* border: 1px solid red; */
+    border: 1px solid red;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
+/* ---------- */
+/* These are our global Flexbox styles. */
+/* ---------- */
+.flex-parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-child {
+    flex: 1 0 min-content;
+}
+/* ---------- */
+/* These are our elements, organized by their parents. */
+/* ---------- */
 header, .one, .two, .three {
     padding: 3% 10%;
 }
@@ -31,15 +43,64 @@ header, .one, .two, .three {
 header {
     background-color: var(--color-background1);
     color: var(--color-text1);
+
+    flex-direction: column;
 }
     /* {header} -> {nav} */
     nav {
 
     }
+        /* {nav} -> {p} */
+        nav > p {
+            font-size: 2.4rem;
+        }
+        /* {nav} -> {ul} */
+        nav > ul {
+            
+        }
+            /* {ul} -> {li} */
+            nav > ul > li {
+                
+            }
+                /* {li} -> {a} */
+                nav > ul > li > a {
+                    color: var(--color-text2);
+                    font-size: 1.8rem;
+                }
     /* {header} -> {div} */
     header > div {
 
     }
+        /* {div} -> {div:first-of-type} */
+        header > div > div:first-of-type {
+            
+        }
+            /* {div} -> {p:first-of-type} */
+            header > div > div > p:first-of-type {
+                font-size: 4.8rem;
+            }
+            /* {div} -> {p:last-of-type} */
+            header > div > div > p:last-of-type {
+                color: var(--color-text2);
+                font-size: 1.8rem;
+            }
+            /* {div} -> {button} */
+            header > div > div > button {
+                border: none;
+                font-size: 1.8rem;
+            }
+        /* {div} -> {div:last-of-type} */
+        header > div > div:last-of-type {
+            
+        }
+            /* {div:last-of-type} -> {div} */
+            header > div > div:last-of-type > div {
+                   
+            }
+                /* {div} -> {p} */
+                header > div > div:last-of-type > div > p {
+                    font-size: 1.8rem;
+                }
 /* {body} -> {main} */
 main {
     
@@ -66,7 +127,9 @@ footer {
     color: var(--color-text1);
     padding: 1% 10%;
 }
-/* These are our generic HTML element selectors. */
+/* ---------- */
+/* These are our generic HTML element selectors. We apply some global styles here to these elements.*/
+/* ---------- */
 a {
     color: inherit;
     font-family: inherit;
@@ -77,6 +140,7 @@ button {
     border-radius: 0.5rem;
     font-family: inherit;
     font-size: inherit;
+    padding: 1% 2%;
 }
 li {
     display: inline;
