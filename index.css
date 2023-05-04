@@ -26,7 +26,7 @@ body{
     height: auto;
     padding: 0;
     margin: 0;
-    width: 40vw;
+    width: 100%; /*40vw*/
 }
 /* These are our general Flexbox settings that we will override in more specific selectors as needed. */
 .flex-container {
@@ -51,13 +51,11 @@ header > * {
     color: var(--color-text1);
     padding-top: 2rem;
 }
-.header__wrapper {
-    background-color: var(--color-background4);
-    height: 10rem;
-    width: auto;
-}
 nav > div > h1 {
-    
+    font-size: 2rem;
+}
+.header__wrapper {   
+    background-color: var(--color-background4);
 }
 /* These are selectors for everything within the main element. */
 main {
