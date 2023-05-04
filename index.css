@@ -18,7 +18,7 @@
     text-align: center;
 }
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,7 @@ body{
     height: auto;
     padding: 0;
     margin: 0;
-    width: 100%; /*40vw*/
+    width: 100%; 
 }
 /* These are our general Flexbox settings that we will override in more specific selectors as needed. */
 .flex-container {
