@@ -28,22 +28,30 @@
 header {
     background-color: var(--color-background1);
 }
+    /* {header} -> {nav} */
+    nav {
+
+    }
+    /* {header} -> {div} */
+    header > div {
+
+    }
 /* {body} -> {main} */
 main{
 
 }
-/* {main} -> {section.one} */
-.one {
-
-}
-/* {main} -> {section.two} */
-.two {
-
-}
-/* {main} -> {section.three} */
-.three {
-    
-}
+    /* {main} -> {section.one} */
+    .one {
+        background-color: var(--color-background3);
+    }
+    /* {main} -> {section.two} */
+    .two {
+        background-color: var(--color-background4);
+    }
+    /* {main} -> {section.three} */
+    .three {
+        background-color: var(--color-background3);
+    }
 /* {body} -> {footer} */
 footer {
 
