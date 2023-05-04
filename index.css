@@ -11,7 +11,7 @@
     align-items: center;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -19,70 +19,6 @@
 }
 * {
     /* border: 1px solid red; */
-    margin: 0;
-    padding: 0;
-}
-body{
-    height: auto;
-    padding: 0;
-    margin: 0;
-    width: 100%; 
-}
-/* These are our general Flexbox settings that we will override in more specific selectors as needed. */
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-.flex-box {
-    flex: 1 0 min-content;
-}
-/* This is our selector for all of the top-level boxes. */
-header, #content-one, #content-two, #content-three, footer {
-    flex-basis: 100%;
-    padding: 3% 15%;
-    width: 100%;
-}
-/* These are selectors for everything within the header element. */
-header {
-    background-color: var(--color-background1);
-    flex-direction: column;
-}
-header > * {
-    color: var(--color-text1);
-    padding-top: 2rem;
-}
-nav > div > h1 {
-    font-size: 2rem;
-}
-.header__wrapper {   
-    background-color: var(--color-background4);
-}
-/* These are selectors for everything within the main element. */
-main {
-    height: 80%;
-    width: 100%;
-}
-#content-one {
-    background-color: var(--color-background3);
-    flex-basis: 100%;
-}
-#content-one > div > div > img {
-    border: 1px solid var(--color-background2);
-    border-radius: 0.5rem;
-}
-#content-two {
-    background-color: var(--color-background4);
-}
-#content-three {
-    background-color: var(--color-background3);
-}
-/* These are selectors for everything within the footer element. */
-footer {
-    background-color: var(--color-background1);
-    min-height: 5%;
-}
-footer > * {
-    color: var(--color-text1);
 }
 /* These are our generic HTML element selectors. */
 a {
@@ -93,7 +29,6 @@ a {
 button {
     background-color: var(--color-background2);
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
     font-family: inherit;
     font-size: inherit;
 }
@@ -103,5 +38,4 @@ li {
 ul {
     display: inline-block;
     list-style-type: none;
-    padding: 1rem 2rem;
 }
