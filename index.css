@@ -1,3 +1,4 @@
+/* {html} -> {:root} */
 :root {
     --color-background1: #1F2937;
     --color-background2: #3882F6;
@@ -13,12 +14,39 @@
     font-family: Roboto, sans-serif;
     font-size: 10px;
     justify-content: center;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
-* {
+/* This is our everything selector. */
+*,
+*::before,
+*::after {
     /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+/* {body} -> {header} */
+header {
+    background-color: var(--color-background1);
+}
+/* {body} -> {main} */
+main{
+
+}
+/* {main} -> {section.one} */
+.one {
+
+}
+/* {main} -> {section.two} */
+.two {
+
+}
+/* {main} -> {section.three} */
+.three {
+    
+}
+/* {body} -> {footer} */
+footer {
+
 }
 /* These are our generic HTML element selectors. */
 a {
