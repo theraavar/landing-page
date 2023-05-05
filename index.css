@@ -14,7 +14,7 @@
 *::before,
 *::after {
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
     color: var(--color-text3);
     font-family: Roboto, sans-serif;
@@ -40,9 +40,8 @@
 /* These are our elements, organized by their parents. */
 /* ---------- */
 header, .one, .two, .three {
-    padding: 3% 10%;
+    padding: 3% 20%;
 }
-/* {body} -> {header} */
 header {
     background-color: var(--color-background1);
     color: var(--color-text1);
@@ -50,105 +49,139 @@ header {
 
     flex-direction: column;
 }
-    /* {header} -> {nav} */
     nav {
 
     }
-        /* {nav} -> {p} */
         nav > p {
             color: var(--color-text1);
             font-size: 2.4rem;
             text-align: left;
         }
-        /* {nav} -> {ul} */
         nav > ul {
             
         }
-            /* {ul} -> {li} */
             nav > ul > li {
                 padding: 0 2rem;
             }
-                /* {li} -> {a} */
                 nav > ul > li > a {
                     color: var(--color-text2);
                     font-size: 1.8rem;
                 }
-    /* {header} -> {div} */
     header > div {
 
     }
-        /* {div} -> {div:first-of-type} */
         header > div > div:first-of-type {
+            text-align: left;
             
         }
-            /* {div} -> {p:first-of-type} */
             header > div > div > p:first-of-type {
                 color: var(--color-text1);
                 font-size: 4.8rem;
+                text-align: inherit;
             }
-            /* {div} -> {p:last-of-type} */
             header > div > div > p:last-of-type {
                 color: var(--color-text2);
                 font-size: 1.8rem;
+                text-align: inherit;
             }
-            /* {div} -> {button} */
             header > div > div > button {
                 border: none;
                 font-size: 1.8rem;
             }
-        /* {div} -> {div:last-of-type} */
-        header > div > div:last-of-type {
-            
-        }
-            /* {div:last-of-type} -> {div} */
             header > div > div:last-of-type > div {
                 background-color: var(--color-background4);
+                padding-bottom: 25%;
+                padding-top: 25%;
+                width: 100%;
             }
-                /* {div} -> {p} */
                 header > div > div:last-of-type > div > p {
                     font-size: 1.8rem;
+                    margin: 0;
                 }
-/* {body} -> {main} */
 main {
-    
+    /* This is just a placeholder for organizational purposes. */
 }
-    /* {main} -> {section.one} */
     .one {
         background-color: var(--color-background3);
     }
-        /* {section.one} -> {div} -> {p} */
         .one > div > p {
             font-size: 3.6rem;
             font-weight: bold;
         }
-        .card > img {
-            border: 1px solid var(--color-background2);
-            border-radius: 0.5rem;
-            height: max-content;
-            width: 90%;
+        .wrapper {
+            border: 2px solid var(--color-background2);
+            border-radius: 1rem;
+            position: relative;
+            width: 100%;
         }
-        /* {section.one} -> {div} -> {div} -> {div.card} */
+        .wrapper::after {
+            content: "";
+            display: block;
+            padding-bottom: 100%;
+        }
+        .wrapper > * {
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
         .card > p {
             font-size: 1.8rem;
+            margin-top: 2rem;
         }
-    /* {main} -> {section.two} */
     .two {
         background-color: var(--color-background4);
     }
-    /* {main} -> {section.three} */
+        .two > div > p {
+            color: var(--color-text3);
+            font-size: 3.6rem;
+            font-style: italic;
+            font-weight: lighter;
+            text-align: left;
+        }
+        .two > div > p:last-of-type {
+            margin-top: -5%;
+            text-align: right;
+        }
     .three {
         background-color: var(--color-background3);
+        padding: 3% 15%;
     }
-        /* {section.three} -> {div} */
         .three > div {
             background-color: var(--color-background2);
+            padding: 0 5%;
         }
-/* {body} -> {footer} */
+            .three > div > div:first-of-type {
+                flex-grow: 2;
+            }
+                .three > div > div:first-of-type > p:first-of-type {
+                    color: var(--color-text1);
+                    font-size: 2.4rem;
+                    font-weight: bold;
+                    text-align: left;
+                }
+                .three > div > div:first-of-type > p:last-of-type {
+                    color: var(--color-text1);
+                    font-size: 1.8rem;
+                    margin-top: -5%;
+                    text-align: left;
+                }
+            .three > div > div:last-of-type > button {
+                color: var(--color-text1);
+                border: 2px solid var(--color-text1);
+                font-size: 1.8rem;
+                padding: 3% 7%;
+            }
 footer {
     background-color: var(--color-background1);
-    color: var(--color-text1);
-    padding: 1% 10%;
+    padding: 1% 3rem;
 }
+    footer > p {
+        color: var(--color-text1);
+        font-size: 2.4rem;
+        padding: 0;
+    }
 /* ---------- */
 /* These are our generic HTML element selectors. We apply some global styles here to these elements.*/
 /* ---------- */
@@ -162,10 +195,14 @@ button {
     border-radius: 0.5rem;
     font-family: inherit;
     font-size: inherit;
-    padding: 1% 2%;
+    padding: 2% 3%;
 }
 li {
     display: inline;
+}
+p {
+    padding: 2%;
+    margin: 1%;
 }
 ul {
     display: inline-block;
